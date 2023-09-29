@@ -11,6 +11,10 @@ body {
     width: 100%;
 
 }
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
 header h2 {
     display: flex;
     align-items: center;
@@ -53,20 +57,20 @@ header img {
     justify-content: center;
 }
 .my-blur {
-    opacity: 5;
-    backdrop-filter: blur(200px);
+    opacity: 2;
+    backdrop-filter: blur(10px);
 }
 .cards-list {
     list-style-type: none;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 .card {
     background-color: #6c757d;
     margin-bottom: 30px;
 }
 .card-body {
-    padding: 20px;
+    padding: 3px;
 }
 .card img {
     max-width: 100%;
@@ -93,26 +97,23 @@ header img {
     font-size: 1.8em
 }
 .box{
-    opacity: 7;
-    backdrop-filter: blur(200px);
-    width: 100%;
-    height: 5vh;
+    opacity: 1;
+    backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     color: black;
 }
+
 .search{
-    width: 100%;
     border: none;
     outline: none;
     background: none;
-    font-size: 13px;
+    font-size: 20px;
 }
 input.search::placeholder {
     color: black;
-    font-size: 1.2em;
 }
 /*.road-icons {*/
 /*    display: flex;*/
@@ -123,39 +124,96 @@ input.search::placeholder {
 /*    padding-right: 10px;*/
 /*    color: darkred;*/
 /*}*/
-footer {
-    background-color: #6c757d;
-    height: 10vh;
-}
-.for-footer {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
+
 body {
     font-size: 16px;
 }
+.footer-link i {
+    font-size: 3em;
+    color: #333; /* Цвет иконок */
+}
 
+/* Дополнительные стили для контейнера иконок */
+.footer-link {
+    margin: 30px;
+    text-decoration: none; /* Убираем подчеркивание для ссылок */
+}
+
+/* Стили для футера */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6c757d;
+    padding: 0 20px; /* Отступы по краям */
+    height: 20vh;
+}
+
+@media (max-width: 766px) {
+    .footer-link i {
+        font-size: 3em;
+        color: #333; /* Цвет иконок */
+    }
+
+    /* Дополнительные стили для контейнера иконок */
+    .footer-link {
+        margin: 10px;
+        text-decoration: none; /* Убираем подчеркивание для ссылок */
+    }
+
+    /* Стили для футера */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6c757d;
+        padding: 0 20px; /* Отступы по краям */
+        height: 20vh;
+    }
+
+}
 /* Для средних экранов, например, планшетов */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 990px) {
     body {
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .card-body {
+        padding: 5px;
+    }
+    .card img {
+        width: 250%;
+        height: auto;
+    }
+    .cards-list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .card {
+        background-color: #6c757d;
+        margin-bottom: 20px;
+    }
+    .my-blur {
+        opacity: 100;
+        backdrop-filter: blur(10px);
+    }
+    input.search::placeholder {
+        color: black;
+        font-size: 20px;
+        height: 15vh;
     }
 }
 
-/* Для больших экранов, например, десктопов */
-
-@media (min-width: 1200px) and (min-width: 1559px) {
-    body {
-        font-size: 15px;
-    }
-    header h2 {
-        font-size: 35px;
-    }
+.my-learning ul {
+    list-style: none;
+    font-size: 20px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-/* Для очень больших экранов, например, экранов с разрешением XXL */
-@media (min-width: 1560px) and (max-width: 1920px) {
-    body {
-        font-size: 18px;
-    }
+.about-us {
+    font-size: 25px;
 }
+/* Стиль для иконок */
+/* Стиль для увеличенных иконок */

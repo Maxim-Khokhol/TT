@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link  rel="stylesheet" type="text/css" href="/css/css.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -34,19 +34,19 @@
 <!--  </div>-->
 </header>
 <section class="content row gy-3">
-  <div class="col-md-4 col-sm-6 order-md-1">
+  <div class="col-lg-4 col-md-6 order-lg-1">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="15000">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="card-body">
             <h5>Best Teacher of the month</h5>
-            <p>Бойко Анастасия <br> Владимировна</p>
+            <p>Бойко Анастасия <br> Владимировна</p><br>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card-body">
             <h5>Best student of the month</h5>
-            <p>Харченко Николай <br>Максимович</p>
+            <p>Харченко Николай <br>Максимович</p><br>
           </div>
         </div>
       </div>
@@ -56,21 +56,32 @@
       </div>
     </div>
   </div>
-  <div class="col-md-4 col-sm-6 order-sm-first">
-    <div class="block bg-secondary order-md-first">First Sec</div>
-  </div>
-  <div class="col-12 col-sm-12 col-md-6 content bg-secondary d-flex flex-column mx-auto">
-    <div class="block box">
-        <input class="search" type="text" name="headline" placeholder="Search..."><br>
-        <i typeof="submit" class="ri-search-line"></i>
+  <div class="col-lg-4 col-md-6 order-md-first">
+    <div class="my-learning bg-secondary block order-lg-first">
+      <h2>My learning</h2>
+      <ul>
+        <li>All courses</li>
+        <li>My Lists</li>
+        <li>Wishlist</li>
+        <li>Archived</li>
+      </ul>
     </div>
   </div>
-  <div class="main-cont col-12 col-md-6 content d-flex flex-column col-sm-12  order-md-last mx-auto my-blur">
+  <div class="col-12 col-md-12 col-lg-6 about-us bg-secondary  mx-auto">
+    <p>Our CRM for educational institutions is a modern tool for efficient management of students,
+      teachers, and courses. Ensure easy access to information, simplify planning, and interact with
+      all participants in the educational process conveniently and effectively</p>
+  </div>
+  <div class="main-cont col-12 col-lg-6 content d-flex flex-column col-md-12  order-lg-last mx-auto my-blur">
+    <div class="block box bg-secondary mt-3 mb-3">
+      <input class="search" type="text" placeholder="Search..."><br>
+      <i typeof="submit" class="ri-search-line"></i>
+    </div>
     <div class="block mb-3 flex-grow-1">
       <section class="cards-section">
         <div class="container">
           <ul class="row cards-list">
-            <li class="col-md-6 col-sm-12">
+            <li class="col-lg-6 col-md-6 col-sm-12">
               <div class="card card-hover">
                 <img src="/img/1.png" alt="card">
                 <div class="card-body">
@@ -81,7 +92,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-md-6 col-sm-12 mb-3">
+            <li class="col-lg-6 col-md-6 col-sm-12">
               <div class="card card-hover">
                 <img src="/img/course2.gif" alt="card">
                 <div class="card-body">
@@ -92,7 +103,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-md-6 col-sm-12">
+            <li class="col-lg-6 col-md-6 col-sm-12">
               <div class="card card-hover">
                 <img src="/img/course3.png" alt="card">
                 <div class="card-body">
@@ -103,7 +114,7 @@
                 </div>
               </div>
             </li>
-            <li class="col-md-6 col-sm-12">
+            <li class="col-lg-6 col-md-6 col-sm-12">
               <div class="card card-hover">
                 <img src="/img/1.png" alt="card">
                 <div class="card-body">
@@ -120,7 +131,7 @@
     </div>
   </div>
 </section>
-  <footer class=" text-center text-white mt-5">
+  <footer class="text-center text-white mt-5">
     <div class="col-12">
       <div>
         <!-- Phone Call -->
